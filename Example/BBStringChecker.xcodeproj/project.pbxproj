@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		192389681BD58C130007C3E1 /* NSString+BBStringChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 192389671BD58C130007C3E1 /* NSString+BBStringChecker.m */; settings = {ASSET_TAGS = (); }; };
+		1923896A1BD59ABF0007C3E1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 192389691BD59ABF0007C3E1 /* LICENSE */; settings = {ASSET_TAGS = (); }; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -17,10 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		046C005ACDDEF518DEFDABCD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		112548C6C8B5A195242B1CE4 /* Pods-BBStringChecker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBStringChecker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBStringChecker_Tests/Pods-BBStringChecker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		192389661BD58C130007C3E1 /* NSString+BBStringChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BBStringChecker.h"; sourceTree = "<group>"; };
 		192389671BD58C130007C3E1 /* NSString+BBStringChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BBStringChecker.m"; sourceTree = "<group>"; };
+		192389691BD59ABF0007C3E1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1C1FB44AE2E4EF1514AD33E4 /* Pods-BBStringChecker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBStringChecker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBStringChecker_Tests/Pods-BBStringChecker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,7 +118,7 @@
 			children = (
 				DBF6E881C40A97B4CEAB7013 /* BBStringChecker.podspec */,
 				D2DE352DFE30400B2D7FE22F /* README.md */,
-				046C005ACDDEF518DEFDABCD /* LICENSE */,
+				192389691BD59ABF0007C3E1 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -183,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1923896A1BD59ABF0007C3E1 /* LICENSE in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
