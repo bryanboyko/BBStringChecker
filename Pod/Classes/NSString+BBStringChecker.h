@@ -36,6 +36,11 @@
 */
 - (BOOL)isValidEmail;
 
+/*
+ shows an alert if the email is invalid
+*/
+-(BOOL)isValidEmailWithAlerts:(BOOL)alertsShown;
+
 
 
 @end
