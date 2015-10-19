@@ -17,8 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-Password Validation/Checking, Email Validation/Checking, SignUp Flow, SignIn Flow, Login Flow                       DESC
-
+			DESC
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/BBStringChecker"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
