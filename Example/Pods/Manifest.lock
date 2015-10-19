@@ -1,0 +1,14 @@
+PODS:
+  - BBStringChecker (0.1.0)
+
+DEPENDENCIES:
+  - BBStringChecker (from `../`)
+
+EXTERNAL SOURCES:
+  BBStringChecker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BBStringChecker: b5453082f6394330fc2e12af60bf31a7f97fb3cd
+
+COCOAPODS: 0.38.2

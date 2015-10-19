@@ -1,0 +1,6 @@
+framework module BBStringChecker {
+  umbrella header "BBStringChecker-umbrella.h"
+
+  export *
+  module * { export * }
+}
