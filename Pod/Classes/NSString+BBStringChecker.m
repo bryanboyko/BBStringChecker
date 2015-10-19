@@ -25,7 +25,7 @@
 {
     return [self isValidPasswordWithMinLength:6
                                     maxLength:20
-                                    uppercase:YES
+                                    uppercase:NO
                                     lowercase:YES
                                       numbers:NO
                                   alertsShown:NO];
@@ -72,7 +72,7 @@
     }
     
     rang = [self rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]];
-    if ( !rang.length )
+    if ( rang.length )
     {
         if (alertsShown) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Characters"
