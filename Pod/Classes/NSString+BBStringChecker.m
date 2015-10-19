@@ -55,7 +55,7 @@
         }
         return NO;
     }
-
+    
     NSRange rang = [self rangeOfCharacterFromSet:[NSCharacterSet letterCharacterSet]];
     
     if ( !rang.length )
@@ -74,27 +74,31 @@
     rang = [self rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]];
     if ( !rang.length )
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Characters"
-                                                        message:@"Password should only contain letters and numbers"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
+        if (alertsShown) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Characters"
+                                                            message:@"Password should only contain letters and numbers"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
         return NO;
     }
     
-
+    
     
     if (hasUppercase) {
         rang = [self rangeOfCharacterFromSet:upperCaseChars];
         if ( !rang.length )
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Uppercase"
-                                                            message:@"Password does not contain any uppercase letters"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
+            if (alertsShown) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Uppercase"
+                                                                message:@"Password does not contain any uppercase letters"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+            }
             return NO;
         }
     }
@@ -103,30 +107,34 @@
         rang = [self rangeOfCharacterFromSet:lowerCaseChars];
         if ( !rang.length )
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Lowercase"
-                                                            message:@"Password does not contain any lowercase letters"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
+            if (alertsShown) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Lowercase"
+                                                                message:@"Password does not contain any lowercase letters"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+            }
             return NO;
         }
     }
-
+    
     if (hasNumbers) {
         rang = [self rangeOfCharacterFromSet:numbers];
         if ( !rang.length )
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Numbers"
-                                                            message:@"Password does not contain any numbers"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
+            if (alertsShown) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Numbers"
+                                                                message:@"Password does not contain any numbers"
+                                                               delegate:nil
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil];
+                [alert show];
+            }
             return NO;
         }
     }
-
+    
     return YES;
 }
 
