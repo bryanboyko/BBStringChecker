@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		022DDE7758F08093E5C7233436FFD80D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D5660DE36CF5C7195FB18084F10FEB /* Foundation.framework */; };
-		2FE14068F57586F0869550493737257A /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CB87CC35064AC40AE82D5778BE0DE4 /* ReplaceMe.m */; };
 		552C593FC935957DF1BEAEA2B01B3101 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D5660DE36CF5C7195FB18084F10FEB /* Foundation.framework */; };
 		7231B30602E810E771CD5C9A18425E53 /* Pods-BBStringChecker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C03887BC8E71ABB2B24F8065C8A3D1F8 /* Pods-BBStringChecker_Tests-dummy.m */; };
 		806EDC3029A3FC735097C479F0FCCCA1 /* BBStringChecker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1228B7A75A05761D30F647F9EF132E41 /* BBStringChecker-dummy.m */; };
@@ -45,7 +44,6 @@
 		533790BF95D3D1AEA448250F0D524A10 /* Pods-BBStringChecker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBStringChecker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6060AB461F9656E828812145AFD9326C /* BBStringChecker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBStringChecker-umbrella.h"; sourceTree = "<group>"; };
 		6161506025F5E59F2B73BC6B4742E525 /* BBStringChecker-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BBStringChecker-Private.xcconfig"; sourceTree = "<group>"; };
-		72CB87CC35064AC40AE82D5778BE0DE4 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		887A0D02ECD8E91ED3985E32C22E4B26 /* Pods-BBStringChecker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BBStringChecker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B6337353133F7B56ECFE6EAFA095B942 /* BBStringChecker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BBStringChecker.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -194,7 +192,6 @@
 		EECB171FF91D183885D34DBB4A273C9C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				72CB87CC35064AC40AE82D5778BE0DE4 /* ReplaceMe.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -327,7 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				806EDC3029A3FC735097C479F0FCCCA1 /* BBStringChecker-dummy.m in Sources */,
-				2FE14068F57586F0869550493737257A /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

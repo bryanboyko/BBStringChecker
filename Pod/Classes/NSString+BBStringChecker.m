@@ -38,6 +38,7 @@
                                                   otherButtonTitles:nil];
             [alert show];
         }
+        return NO;
     }
 }
 
