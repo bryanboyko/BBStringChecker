@@ -28,7 +28,7 @@ Valid Password
                           alertsShown:(BOOL)alertsShown;
 ```
 
-setting alertsShown to yes will display an alert message for failing criteria
+NOTE: Setting alertsShown to yes will display an alert message for failing criteria
 
 Valid Email
 --
