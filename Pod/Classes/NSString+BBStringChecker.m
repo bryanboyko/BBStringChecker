@@ -42,9 +42,9 @@
 - (BOOL)isValidPassword
 {
     return [self isValidPasswordWithMinLength:6
-                                    maxLength:20
+                                    maxLength:100
                                     uppercase:NO
-                                    lowercase:YES
+                                    lowercase:NO
                                       numbers:NO
                                   alertsShown:NO];
 }
@@ -52,9 +52,9 @@
 - (BOOL)isValidPasswordWithAlerts:(BOOL)alertsShown
 {
     return [self isValidPasswordWithMinLength:6
-                                    maxLength:20
+                                    maxLength:100
                                     uppercase:NO
-                                    lowercase:YES
+                                    lowercase:NO
                                       numbers:NO
                                   alertsShown:YES];
 }
