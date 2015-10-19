@@ -69,8 +69,6 @@
     NSCharacterSet *upperCaseChars = [NSCharacterSet characterSetWithCharactersInString:@"ABCDEFGHIJKLKMNOPQRSTUVWXYZ"];
     NSCharacterSet *lowerCaseChars = [NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyz"];
     
-    NSCharacterSet *numbers = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
-    
     if ( [self length]<minLength || [self length]> maxLength)
     {
         if (alertsShown) {
@@ -98,22 +96,6 @@
         }
         return NO;
     }
-    
-    rang = [self rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]];
-    if ( rang.length )
-    {
-        if (alertsShown) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid Characters"
-                                                            message:@"Password should only contain letters and numbers"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-        }
-        return NO;
-    }
-    
-    
     
     if (hasUppercase) {
         rang = [self rangeOfCharacterFromSet:upperCaseChars];
@@ -148,7 +130,7 @@
     }
     
     if (hasNumbers) {
-        rang = [self rangeOfCharacterFromSet:numbers];
+        rang = [self rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet]];
         if ( !rang.length )
         {
             if (alertsShown) {
