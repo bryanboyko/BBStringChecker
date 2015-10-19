@@ -49,6 +49,16 @@
                                   alertsShown:NO];
 }
 
+- (BOOL)isValidPasswordWithAlerts:(BOOL)alertsShown
+{
+    return [self isValidPasswordWithMinLength:6
+                                    maxLength:20
+                                    uppercase:NO
+                                    lowercase:YES
+                                      numbers:NO
+                                  alertsShown:YES];
+}
+
 - (BOOL)isValidPasswordWithMinLength:(int)minLength
                            maxLength:(int)maxLength
                            uppercase:(BOOL)hasUppercase

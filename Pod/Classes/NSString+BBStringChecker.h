@@ -22,6 +22,13 @@
  
 - (BOOL)isValidPassword;
 
+
+/*
+ show an alert if password is invalid
+*/
+- (BOOL)isValidPasswordWithAlerts:(BOOL)alertsShown;
+
+
 /* 
  customize your own password criteria!
 */
@@ -31,10 +38,12 @@
                            lowercase:(BOOL)hasLowercase
                              numbers:(BOOL)hasNumbers
                           alertsShown:(BOOL)alertsShown;
-/* 
+
+/*
  checks for a valid email
 */
 - (BOOL)isValidEmail;
+
 
 /*
  shows an alert if the email is invalid
