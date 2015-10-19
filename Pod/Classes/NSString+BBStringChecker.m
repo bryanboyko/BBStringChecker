@@ -28,18 +28,15 @@
     {
         return YES;
     }
-    else
-    {
-        if (alertsShown) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid email"
-                                                            message:@"Please enter a valid email address"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-        }
-        return NO;
+    if (alertsShown) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid email"
+                                                        message:@"Please enter a valid email address"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
+    return NO;
 }
 
 - (BOOL)isValidPassword
