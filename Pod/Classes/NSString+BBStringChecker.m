@@ -26,8 +26,13 @@
     
     if ([emailTest evaluateWithObject:self])
     {
-        return YES;
+        NSString *lastFourChars = [self substringFromIndex:[self length] - 4];
+        if ([lastFourChars isEqualToString:@".com"])
+        {
+            return YES;
+        }
     }
+    
     if (alertsShown) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid email"
                                                         message:@"Please enter a valid email address"
