@@ -32,7 +32,6 @@
             return YES;
         }
     }
-    
     if (alertsShown) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Invalid email"
                                                         message:@"Please enter a valid email address"

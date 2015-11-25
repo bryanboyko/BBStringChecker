@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BBStringChecker"
-  s.version          = "1.9"
+  s.version          = "2.1"
   s.summary          = "Email and password validation"
 
 # This description is used to generate tags and improve search results.
